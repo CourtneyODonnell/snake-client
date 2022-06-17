@@ -1,7 +1,12 @@
 const net = require('net');
+const setupInput = require('./input');
 //const { connected } = require('process');
 
 const connect = () => {
+  const up = 'Move: up';
+  const down = 'Move: down';
+  const right = 'Move: right';
+  const left = 'Move: left';
     // establishes a connection with the game server
     //connect: function () {
     const conn = net.createConnection({
@@ -22,11 +27,6 @@ const connect = () => {
     console.log('Successfully connected to game server!');
     conn.write('Name: CIO');
     //conn.write('Move: up');
-
-    const up = 'Move: up';
-    const down = 'Move: down';
-    const right = 'Move: right';
-    const left = 'Move: left';
     
   });
   

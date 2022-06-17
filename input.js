@@ -20,4 +20,22 @@ const setupInput = (conn) => {
 the movement command to your screen if one of these
 keys is pressed. */
 
-module.exports = setupInput;
+const handleUserInput = (input) => {
+  if (input === '\u0003') {
+    process.exit();
+  } else if (input === 'w'){
+    conn.write('Move: up');
+  } else if (input === 's'){
+    conn.write('Move: down');
+  } else if (input === 'd'){
+    conn.write('Move: right');
+  } else if (input === 'a'){
+    conn.write('Move: left');
+  }
+  
+};
+
+
+
+
+module.exports = {setupInput};

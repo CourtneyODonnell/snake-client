@@ -1,5 +1,6 @@
 const net = require('net');
 const setupInput = require('./input');
+const { IP, PORT } = require('./constants');
 //const { connected } = require('process');
 
 const connect = () => {
@@ -10,16 +11,16 @@ const connect = () => {
     // establishes a connection with the game server
     //connect: function () {
     const conn = net.createConnection({
-      host: 'localhost', // IP address here,
-      port: 50541 // PORT number here,
+      host: IP,
+      port: PORT
     });
    
     // interpret incoming data as text
     conn.setEncoding("utf8");
 
     setInterval(() => { conn.write(`${up}`)}, 5000);
-    setInterval(() => { conn.write(`${down}`)}, 1000);
     setInterval(() => { conn.write(`${right}`)}, 1000);
+    setInterval(() => { conn.write(`${down}`)}, 1000);
     setInterval(() => { conn.write(`${left}`)}, 1000);
 
     //connect event

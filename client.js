@@ -1,4 +1,5 @@
 const net = require('net');
+const { connected } = require('process');
 
 const client = {
   // establishes a connection with the game server
@@ -13,7 +14,8 @@ const client = {
 
     //connect event
     conn.on('connect', () => {
-    console.log('Connected to the server!');
+    console.log('Successfully connected to game server!');
+    conn.write('Name: CIO');
   });
   
     // data event

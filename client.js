@@ -16,6 +16,8 @@ const client = {
     conn.on('connect', () => {
     console.log('Successfully connected to game server!');
     conn.write('Name: CIO');
+    //conn.write('Move: up');
+    
   });
   
     // data event

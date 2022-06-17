@@ -26,6 +26,7 @@ const connect = () => {
     conn.on('connect', data => {
     console.log('Successfully connected to game server!');
     conn.write('Name: CIO');
+    // conn.write('Say: prepare to die, mortal');
     //conn.write('Move: up');
     
   });
@@ -34,6 +35,7 @@ const connect = () => {
     conn.on('data', (data) =>  {
     console.log('Server: ' + data);
     });
+    
       return conn;
 
 

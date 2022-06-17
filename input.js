@@ -13,8 +13,11 @@ const handleUserInput = (input) => {
     connection.write('Move: right');
   } else if (input === 'a'){
     connection.write('Move: left');
+  } else if (input === 'q') {
+    connection.write('Say: Prepare to die!');
+  } else if (input === 'e') {
+    connection.write('Say: Your time is near');
   }
-  //connection.write(`${input}`);
 }
 // setup interface to handle user input from stdin
 

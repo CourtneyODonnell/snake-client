@@ -1,9 +1,9 @@
 // Stores the active TCP connection object.
 let connection;
-
+//require constants from constants file
 const { moveDown, moveUp, moveRight, moveLeft } = require('./constants');
 
-
+//user input controls
 const handleUserInput = (input) => {
   if (input === '\u0003') {
     process.exit();
@@ -22,7 +22,6 @@ const handleUserInput = (input) => {
   }
 }
 // setup interface to handle user input from stdin
-
 const setupInput = (conn) => {
   connection = conn;
   const stdin = process.stdin;
@@ -37,5 +36,5 @@ const setupInput = (conn) => {
 
 
 };
-
+//exports from this file
 module.exports = {setupInput};

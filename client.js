@@ -1,8 +1,10 @@
+//constants to require for use in this file
 const net = require('net');
-const setupInput = require('./input');
+//const setupInput = require('./input');
 const { IP, PORT } = require('./constants');
 //const { connected } = require('process');
 
+//connect function
 const connect = () => {
   const up = 'Move: up';
   const down = 'Move: down';
@@ -42,5 +44,5 @@ const connect = () => {
 
 };
 
-
+//exports from this file
 module.exports = {connect};

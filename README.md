@@ -1,5 +1,5 @@
 # :snake:	Snake Client Project :snake:	
-## :bulb:Lighthouse:house: :test_tube:Labs:test_tube:	
+## :bulb:Lighthouse :house: Labs:test_tube:	
 
 **Snake :snake: is a _very popular_ video game! It is a video game concept where the player maneuvers a dot _(and grows it)_ by _‘eating’_ pieces of food! As it moves and eats, it _GROWS..._ and the growing :snake:snake:snake: becomes an obstacle to smooth maneuvers! The goal is to grow it to become as _BIG_ as possible without bumping into the side walls, or bumping into itself, upon which it dies.:skull:**
 
